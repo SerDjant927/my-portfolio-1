@@ -1,0 +1,570 @@
+@font-face{
+    font-family: 'Acrom';
+    src: url('../fonts/AcromFonts/Acrom-Bold.eot');
+    src: url('../fonts/AcromFonts/Acrom-ExtraBold.eot') format('eot'),
+    url('../fonts/AcromFonts/Acrom-Regular.eot') format('eot'),
+    url('../fonts/FiraSans/FiraSans.eot') format('eot'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans/FiraSans.eot') format('eot'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-wrapper{
+}
+/*медиа-запросы для меня в новинку
+но я смог добавить немного своего адаптива*/
+@media (max-width: 992px) {
+ .navbar-brand {
+    position: absolute;
+    top:5px;
+    left:1px;
+    height:25px;
+    background-color:red;}
+ .button-p{
+    display:none;
+}
+}
+
+@media (max-width: 1200px){
+ .promo-prod{
+    display: none;
+}
+}
+
+@media (max-width: 1160px){
+ .footer-blocks{
+    width: 880px;
+    height: 700px;
+    margin-left: 30px;
+}
+}
+
+.page-header{
+	width: 100vw;
+	height: 67px;
+    background-color: #f8f9fa;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    font-family: 'Acrom-Bold';
+}
+
+.container-fluid{
+    margin-left: 70px;
+    width: 1166px;
+    height: 67px;
+}
+
+/*кнопка-бургер*/
+
+.burger-btn{
+    margin-right: 65px;
+    width: 90px;
+    background-color: #f8f9fa;
+    position: relative;
+    color: black;
+    text-align: right;
+    height: 40px;
+    font-family: 'Acrom-Bold';
+}
+
+#check-menu{
+    display: none;
+}
+
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+    line-height: 40px;
+}
+.burger-line{
+    position: absolute;
+    top: 8px;
+    right: 65px;
+    width: 35px;
+    height: 2px;
+    background-color: #13a8d1;
+    transition: .5s all;
+}
+
+.second, .third{
+    top: 18px;
+}
+
+.fourth{
+    top: 28px;
+}
+
+.content{
+    height: 1328px;
+    width: 100vw;
+}
+
+.main-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color:black;
+    text-decoration: none;
+    border-top: 1px solid rgba(255,255,255,.3);
+    background-color: #fff;
+}
+
+.burger-link:hover{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    text-decoration: none;
+}
+
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 15px;
+}
+
+#check-menu:checked ~ .first{
+    display: none;
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+
+.navbar-nav{
+	text-align: center;
+	float:left;
+}
+
+/*анимация наведения на ссылки*/
+.navbar-nav a:before,.navbar-nav a:after,.navbar-nav a:hover span{
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.navbar-nav a{
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    color:#212121;
+    text-decoration:none;
+    background:#f8f9fa;
+}
+
+.navbar-nav a:hover span{
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-nav a:hover span{
+    color:#fff
+}
+
+.navbar-nav a:before,.navbar-nav a:after{
+    content:'';
+    position:absolute;
+    width:300%;
+    height:100%;
+    -moz-transform: skew(-30deg, 0deg);
+    -o-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    -ms-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    z-index:0;
+}
+
+.navbar-nav a:before{
+    top:0;
+    left:200%;
+    background:rgba(48,161,75,0.3);
+}
+
+.navbar-nav a:after{
+    top:0;
+    right:200%;
+    background:rgba(48,161,75,0.3);
+}
+
+.navbar-nav a:hover:after{
+    right:-15%;
+}
+
+.navbar-nav a:hover:before{
+    left:-15%;
+}
+
+.navbar-nav-li{
+    margin-right: 30px;
+}
+
+.nav-link{
+	font-family:'Acrom-Bold';
+    font-size: 18px;
+    color:#fff;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand{
+	margin-right: 65px;
+	background:url('../pics/ficus-h3.png') no-repeat left;
+    background-color: #f8f9fa;
+	width:200px;
+    height: 42px;
+	border-style: none;
+	text-align: left;
+	color:#0a591d;
+}
+
+.button-p{
+	margin-left: 120px;
+	background:url('../pics/phone-h.png') no-repeat left;
+	height: 25px;
+	width: 25px;
+	border-style: none;
+	text-align: right;
+}
+
+.tel{
+    height: 1em;
+    width: 180px;
+    border-style: none;
+    margin-top:-25px;
+    margin-left: -5px;
+    background-color: #f8f9fa;
+    left;
+}
+
+.container-fluid{
+   position: fixed;
+    top:0;
+    height: 50px;
+    width: 100vw;
+}
+
+.background-img{
+    position: relative;
+    background: url('../pics/content-bg.jpg'); /*размер ужал в фотошопе*/
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 528px;
+    position: relative;
+    z-index: -1;
+    margin-top:67px;
+}
+
+.promo-block{
+    position: absolute;
+    top:110px;
+    left:100px;
+    color:#fff;
+    background: rgba(69,57,52,0.8);
+    height: 400px;
+    width: 650px;
+}
+
+.span-promo-1{
+    font-family:'Acrom-ExtraBold';
+    font-weight: bold;
+    font-size:18px;
+    padding-left: 25px;
+}
+
+.span-promo-2{
+    padding-left: 18px;
+    font-family:'FiraSans';
+    font-size:20px;
+    opacity: 0.7;
+}
+
+.h1-promo{
+    padding-left: 25px;
+    font-size:50px;
+    font-family:'Acrom-ExtraBold';
+    font-weight: bold;
+}
+
+.slider{
+	width: 800px;
+	height:350px;
+	margin-left: 100px;
+    margin-top: 60px;
+    font-size: 36px;
+    font-family:'Acrom-Bold';
+ }
+
+.slider-main{
+    height: 300px;
+    width: 1080px;
+   
+}
+
+.slider-slide{
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+    font-family:'Acrom-ExtraBold';
+    font-size: 20px;
+}
+
+.img-slider{
+    height: 250px;
+    width: 250px;
+    background:no-repeat center cover;
+    border-bottom: 2px solid #488647;
+   
+}
+ .main-product:hover,.slider-slide:hover{
+    opacity: 0.8;
+}
+
+.slider-p{
+    color:rgba(0,0,0,0.6);
+    font-family: 'Acrom-ExtraBold';
+    font-size: 12px;
+}
+
+.slick-prev:before, .slick-next:before { 
+    color:#67BF00 !important;
+}
+
+.promo-prod{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.main-product{
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    margin-left: 20px;
+    text-align: center;
+    
+}
+
+.main-footer{
+    margin-top: 60px;
+	background-color:#6cb229;
+    width: 100vw;
+	height: 200px;
+}
+
+.main-footer-content{
+    color:white;
+	text-align: center;
+    height: 200px;
+    width: 100vw;
+}
+
+.main-h3{
+	font-size: 30px;
+	font-family:'Acrom-Bold';
+}
+
+.btn{
+	font-family:'Acrom-ExtraBold';
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.page-footer{
+    width: 100vw;
+    height: 350px;
+    margin-top: 60px;
+}
+
+.footer-blocks{
+	width: 1166px;
+    margin-left: 165px;
+	height: 350px;
+    margin-top: 60px;
+	
+	
+}
+
+.footer-table{
+    margin-right: 90px;
+	height: 350px;
+}
+
+.footer-list{
+    list-style: none;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/*анимация наведения на ссылки футера*/
+.footer-list a:before,.footer-list a:after,.footer-list a:hover span{
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.footer-list a{
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    color:#212121;
+    text-decoration:none;
+}
+
+.footer-list a:hover span{
+    position: relative;
+    z-index: 1;
+}
+
+.footer-list a:hover span{
+    color:#fff
+}
+
+.footer-list a:before,.footer-list a:after{
+    content:'';
+    position:absolute;
+    width:200%;
+    height:100%;
+    -moz-transform: skew(-30deg, 0deg);
+    -o-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    -ms-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    z-index:0;
+}
+
+.footer-list a:before{
+    top:0;
+    left:200%;
+    background:rgba(95,180,115,0.3) ;
+}
+
+.footer-list a:after{
+    top:0;
+    right:200%;
+    background:rgba(95,180,115,0.3) ;
+}
+
+.footer-list a:hover:after{
+    right:-15%;
+}
+
+.footer-list a:hover:before{
+    left:-15%;
+}
+
+.footer-item{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family:'Acrom-Regular';
+}
+
+.footer-link{
+    color:rgba(0,0,0,0.6);
+    font-size: 18px;
+}
+
+/*кнопка "наверх" взята со стороннего ресурса
+и переделана под данный сайт*/
+#toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:rgba(95,180,115,0.4);
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:20px; 
+    right:20px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:'Acrom-ExtraBold';
+    font-size:15px;
+}
+
+/*анимация наведения на кнопки "заказать"*/
+.btn:after,.btn:hover span{
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.btn{
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    color:#212121;
+    text-decoration:none;
+}
+
+.btn:hover span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover span{
+    color:black;
+}
+
+.btn.btn:after{
+    content:'';
+    position:absolute;
+    width:200%;
+    height:100%;
+    -moz-transform: skew(-30deg, 0deg);
+    -o-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    -ms-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    z-index:0;
+}
+
+.btn:after{
+    top:0;
+    right:200%;
+    background:rgba(108,178,41,0.7);
+}
+
+.btn:hover:after{
+    right:-15%;
+}
+
+.btn-span{
+    z-index:1;
+    color:black;
+}
+

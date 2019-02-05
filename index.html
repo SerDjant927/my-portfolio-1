@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <title>Фикус-пикус</title>
+        
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+                
+         <link href="css/normalize.css" rel="stylesheet">
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+         <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+         <link rel="stylesheet" type="text/css" href="css/slick.css">
+         <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+         <link href="css/main.css" rel="stylesheet"> <!-- ваш css-код здесь -->
+</head>
+
+<body class="page-wrapper">
+
+<header class="page-header">
+<!-- шапка и меню -->
+    
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-default bg-light nav-header"><a class="navbar-brand" href="#"></a>
+    
+<!--бургер-кнопка, взял готовую и под себя переделал-->
+<div class="burger-btn">
+        <input type="checkbox" id="check-menu">
+        <label class="burger-label" for="check-menu">МЕНЮ</label>
+             <div class="burger-line first"></div>
+             <div class="burger-line second"></div>
+             <div class="burger-line third"></div>
+             <div class="burger-line fourth"></div>
+             <nav class="main-menu">
+                 <a class="burger-link" href="#">Пункт 1</a>
+                 <a class="burger-link" href="#">Пункт 2</a>
+                 <a class="burger-link" href="#">Пункт 3</a>
+                 <a class="burger-link" href="#">Пункт 4</a>
+                 <a class="burger-link" href="#">Пункт 5</a>
+</nav>
+</div>
+
+<ul class="navbar-nav"> 
+     <li class="navbar-nav-li"><a class="nav-link" href="#" data-link="slider">Магазин</a></li> 
+     <li class="navbar-nav-li"><a class="nav-link" href="#" data-link="main-footer">Доставка</a></li> 
+     <li class="navbar-nav-li"><a class="nav-link" href="#">Зеленый блог</a></li> 
+ </ul>
+
+         
+ <button type="submit" class="button-p" onclick="location.href='tel:8-800-123-12-12'"></button><a class="tel" href="tel:8-800-123-12-12">8-800-123-12-12</a>
+     
+</div>
+
+</header>
+
+<main class="content" role="main">
+            <!-- 
+                основная часть страницы: 
+                - промо-блок
+                - список товаров 
+                - призыв к действию 
+            -->
+
+<div class="background-img">
+
+</div>
+<!--сделал промо-блок самостоятельным
+чтобы удобнее задать расположение-->
+        <div class="promo-block">
+            <br></br>
+    <span class="span-promo-1">ДРУЖБА ЕЩЕ НИКОГДА НЕ БЫЛА ТАКОЙ ИСКРЕННЕЙ</span>
+    <br></br>
+    <h1 class="h1-promo">Фикус - лучший друг человека</h1>
+    <span class="span-promo-2">Не надо кормить. Не опрокинет елку, не нагадит в тапки. Идеально.</span>
+    <br></br>
+    <button class="btn btn-default btn-lg"><span class="btn-span">Заказать</span></button>
+</div>
+        
+     <div class="slider" data-block="slider">
+      <h2>Огромный ассортимент фикусов</h2>
+          <div class="slider-main"data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-2.jpg" alt="/portfolio_pics">Пышный фикус<p class="slider-p">1900р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-3.jpg" alt="/portfolio_pics">Столичный фикус<p class="slider-p">1350р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-2.jpg" alt="/portfolio_pics">Опасный фикус<p class="slider-p">3500р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-1.jpg" alt="/portfolio_pics">Питерский фикус<p class="slider-p">78000р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-3.jpg" alt="/portfolio_pics">Обычный фикус<p class="slider-p">10000р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-3.jpg" alt="/portfolio_pics">Простой фикус<p class="slider-p">13500р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-2.jpg" alt="/portfolio_pics">Пихтовый фикус<p class="slider-p">30500р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-1.jpg" alt="/portfolio_pics">Какой-то фикус<p class="slider-p">7800р</p></div>
+          <div class="slider-slide"><img class="img-slider" src="img/ficus-3.jpg" alt="/portfolio_pics">Арома-фикус<p class="slider-p">12000р</p></div>
+     </div>
+</div>
+ <div class="promo-prod">
+         <div class="main-product"><img class="img-slider" src="img/ficus-3.jpg" alt="/portfolio_pics">Арома-фикус<p class="slider-p">12000р</p></div>
+         <div class="main-product"><img class="img-slider" src="img/ficus-1.jpg" alt="/portfolio_pics">Какой-то фикус<p class="slider-p">7800р</p></div>
+         <div class="main-product"><img class="img-slider" src="img/ficus-3.jpg" alt="/portfolio_pics">Простой фикус<p class="slider-p">13500р</p></div>
+         <div class="main-product"><img class="img-slider" src="img/ficus-1.jpg" alt="/portfolio_pics">Питерский фикус<p class="slider-p">78000р</p></div>
+</div>
+</main>
+     <div class="main-footer" data-block="main-footer">
+         <div class="main-footer-content">
+         <br></br>
+         <h3 class="main-h3">Купите фикус со скидкой до конца января</h3>
+         <button class="btn btn-default btn-lg"><span class="btn-span">Заказать</span></button>
+         </div>
+     </div>
+        
+ 
+ <footer class="page-footer">
+  <!-- футер и ссылки -->
+<div class="row footer-blocks">
+     <div class="col-md-3 footer-table">
+     <ul class="footer-list">  О компании
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">История бренда</a></li>
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Контакты</a></li>
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Телефоны</a></li>
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Сотрудники</a></li>
+ </ul>
+</div>
+     <div class="col-md-3 footer-table">
+     <ul class="footer-list"> Продукция
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Питерские фикусы</a></li>
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Столичные фикусы</a></li>
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Сибирские фикусы</a></li>
+         <li class="footer-item"><a href="#" class="footer-link" style="color:#4f4f4f">Злобные фикусы</a></li>
+ </ul>
+</div>
+     <div class="col-md-3 footer-table">
+     <ul class="footer-list"> Заказ
+         <li class="footer-item"><a class="footer-link" href="tel:8-800-123-12-12">8-800-123-12-12</a></li>
+         <li class="footer-item"><a class="footer-link" href="mailto:Ficus-club@yandex.ru">Ficus-club@yandex.ru</a></li>
+</div>
+</div>
+<div ID = "toTop">^ Наверх</div>
+
+</footer>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+        
+</body>
+
+</html>
